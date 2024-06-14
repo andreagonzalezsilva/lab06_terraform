@@ -19,6 +19,7 @@ resource "aws_instance" "web2" {
   tags = {
     Name = "CCTB-ProductionEnv2"
   }
+}
 
 
 resource "aws_instance" "web3" {
@@ -30,6 +31,7 @@ resource "aws_instance" "web3" {
   tags = {
     Name = "Testing_Env"
   }
+}
 
 resource "aws_instance" "web4" {
   ami           = "ami-0440d3b780d96b29d" # Amazon Linux 2 AMI (HVM)
@@ -40,7 +42,7 @@ resource "aws_instance" "web4" {
   tags = {
     Name = "Staging_Env"
   }
-
+}
 resource "aws_instance" "web5" {
   ami           = "ami-0440d3b780d96b29d" # Amazon Linux 2 AMI (HVM)
   instance_type = "t2.micro"
